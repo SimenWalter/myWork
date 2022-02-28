@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>Quot</title>
+    <style>
+        .button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #8c8f8c;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 15px;
+            padding: 13px;
+            width: 150px;
+            height: 40;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+            top: 223px;
+            left: 58%;
+            position: relative;
+        }
+        
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        
+        .button span:after {
+            content: '\00bb';
+            position: relative;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+        
+        .button:hover span {
+            padding-right: 25px;
+        }
+        
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        
+        .search {
+            position: relative;
+            top: 263px;
+            left: 44.5%;
+            width: 200;
+            height: 30px;
+        }
+        
+        .title {
+            font-size: 20px;
+            position: relative;
+            top: 230px;
+            left: 45.8%;
+            width: 200;
+            height: 30px;
+        }
+        
+        h1 {
+            position: relative;
+            font-size: 100px;
+            left: 44%;
+            top: 100px;
+        }
+    </style>
+</head>
+<h1>Quot</h1>
+
+<body>
+    <form>
+        <label class="title" for="search">Enter desired quote</label><br>
+        <input class="search" type="text" id="textbook_id" name="Search"> <br>
+        <button class="button" id="post-btn" style="vertical-align:middle"><span>Search </span></button>
+    </form>
+    <script src="button.js"></script>
+</body>
+
+</html>
